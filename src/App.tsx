@@ -1,9 +1,11 @@
+import { Container } from "./globalStyle"
+
 function App() {
 
   return (
-    <div>
-      My Super List
-    </div>
+    <Container>
+      test
+    </Container>
   )
 }
 
