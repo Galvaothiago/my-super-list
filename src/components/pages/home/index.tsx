@@ -2,6 +2,7 @@ import { BannerInfo } from "../../bannerInfo";
 import {  Button, Container, ContainerButton, IconButton } from "./styles";
 import { BsPlus } from 'react-icons/bs'
 import { VscHistory } from 'react-icons/vsc'
+import { LastPurchaseBanner } from "../../lastPurchaseDone";
 
 export function Home() {
     return (
@@ -29,6 +30,7 @@ export function Home() {
                     <span>All my purchases</span>
                 </Button>
             </ContainerButton>
+            <LastPurchaseBanner />
         </Container>
     )
 }

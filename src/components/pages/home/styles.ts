@@ -72,13 +72,3 @@ export const IconButton = styled.div`
         font-size: 2rem;
     }
 `
-
-// export const BackgroundCart = styled.div`
-//     width: 3rem;
-//     height: 7rem;
-
-//     background: gray;
-//     position: absolute;
-//     right: 0;
-
-// `
