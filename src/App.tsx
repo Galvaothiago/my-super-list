@@ -1,10 +1,11 @@
+import { Header } from "./components/header"
 import { Container } from "./globalStyle"
 
 function App() {
 
   return (
     <Container>
-      test
+      <Header />
     </Container>
   )
 }
