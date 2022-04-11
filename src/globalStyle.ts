@@ -26,6 +26,7 @@ export const Container = styled.div`
 
     padding: .35rem;
     background: #f8f9fa;
+    overflow: hidden;
 `
 export const Main = styled.main`
     width: 100%;
