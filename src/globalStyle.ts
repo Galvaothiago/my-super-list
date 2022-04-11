@@ -27,3 +27,9 @@ export const Container = styled.div`
     padding: .35rem;
     background: #f8f9fa;
 `
+export const Main = styled.main`
+    width: 100%;
+    height: calc(100% - 5rem);
+
+    padding: 1rem 0;
+`

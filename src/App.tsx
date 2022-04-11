@@ -1,11 +1,15 @@
 import { Header } from "./components/header"
-import { Container } from "./globalStyle"
+import { Home } from "./components/pages/home"
+import { Container, Main } from "./globalStyle"
 
 function App() {
 
   return (
     <Container>
       <Header />
+      <Main>
+        <Home />
+      </Main>
     </Container>
   )
 }
