@@ -3,8 +3,12 @@ import {  Button, Container, ContainerButton, IconButton } from "./styles";
 import { BsPlus } from 'react-icons/bs'
 import { VscHistory } from 'react-icons/vsc'
 import { LastPurchaseBanner } from "../../lastPurchaseDone";
+import { AddPurchaseContext } from "../../context/AddPurchaseContext";
+import { useContext } from "react";
 
 export function Home() {
+    const { handleAddPopup } = useContext(AddPurchaseContext)
+    
     return (
         <Container>
             <BannerInfo />
@@ -13,6 +17,7 @@ export function Home() {
                     path={"/assets/cart1.png"}
                     position={"right center"}
                     percent={40}
+                    onClick={handleAddPopup}
                 >
                     <IconButton>
                         <BsPlus />

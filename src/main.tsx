@@ -1,11 +1,14 @@
 import ReactDOM from 'react-dom'
 import App from './App'
+import { AddPurchaseProvide } from './components/context/AddPurchaseContext'
 import { GlobalStyle } from './globalStyle'
 
 ReactDOM.render(
   <>
-    <App />
-    <GlobalStyle />
+    <AddPurchaseProvide>
+      <App />
+      <GlobalStyle />
+    </AddPurchaseProvide>
   </>,
   document.getElementById('root')
 )

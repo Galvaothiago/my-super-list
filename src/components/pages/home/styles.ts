@@ -47,6 +47,8 @@ export const Button = styled.div<BackgroundProp & PositionProp & PercentProp>`
     background-position: ${({position}) => position};
     border-radius: 10px;
 
+    cursor: pointer;
+
     span {
         width: 8rem;
         word-wrap: break-word;
