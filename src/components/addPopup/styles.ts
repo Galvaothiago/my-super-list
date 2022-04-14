@@ -25,6 +25,16 @@ export const Modal = styled.div`
     padding: 0 1rem;
     border-radius: 5px;
 
+    > form {
+        width: 100%;
+        height: 14rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        /* background-color: red; */
+    }
+
 `
 
 export const ExitButton = styled.div`
@@ -54,18 +64,11 @@ export const ExitButton = styled.div`
 
 `
 
-export const Title = styled.div`
+export const ContainerAddItem = styled.div`
     width: 100%;
+    min-height: 20rem;
     height: auto;
-    display: flex;
-    justify-content: flex-end;
 
-    span {
-        padding: .4rem;
-        background-color: white;
-        font-weight: bold;
-        font-size: 1rem;
-        text-transform: uppercase;
-        border-radius: 10px;
-    }
+    background-color: white;
+    border-radius: 10px;
 `
