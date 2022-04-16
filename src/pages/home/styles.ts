@@ -28,6 +28,15 @@ export const ContainerButton = styled.section`
     gap: 2rem;
     padding: 1rem;
 
+    a {
+        max-width: 15rem;
+        width: 100%;
+        height: 18rem;
+
+        text-decoration: none;
+        color: inherit;
+    }
+
 `
 
 export const Button = styled.div<BackgroundProp & PositionProp & PercentProp>`

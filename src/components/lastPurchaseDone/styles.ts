@@ -6,6 +6,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
 
+    /* background: #ada7ff; */
     background: rgba(163,206,241,.3);
     padding: 1rem;
 
@@ -19,6 +20,7 @@ export const Container = styled.div`
         font-size: .9rem;
         font-weight: bold;
         color: #393d3f;
+        /* color: white; */
  
     }
 

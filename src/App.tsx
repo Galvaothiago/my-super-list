@@ -1,6 +1,10 @@
 import { Header } from "./components/header"
-import { Home } from "./components/pages/home"
 import { Container, Main } from "./globalStyle"
+
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
+import { AddPurchase } from "./pages/addPurchase";
+
 
 function App() {
 
@@ -8,7 +12,11 @@ function App() {
     <Container>
       <Header />
       <Main>
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/addPurchase" element={<AddPurchase />} />
+
+        </Routes>
       </Main>
     </Container>
   )

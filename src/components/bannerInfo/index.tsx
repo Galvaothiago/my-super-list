@@ -1,5 +1,6 @@
-import { BadgeItems, Container, IconCart, InfoPurchase} from "./styles";
-import { BsCart3 } from 'react-icons/bs'
+import { Container, InfoPurchase} from "./styles";
+
+import { CartUI } from "../cartUI";
 export function BannerInfo() {
     return (
         <Container>
@@ -9,10 +10,7 @@ export function BannerInfo() {
                     <h4>Title of the purchase</h4>
                     <p>supermarket name</p>
                 </div>
-                <IconCart>
-                    <BsCart3 />
-                    <BadgeItems>{10}</BadgeItems>
-                </IconCart>
+                <CartUI quantity={4} />
             </InfoPurchase>
         </Container>
     )
