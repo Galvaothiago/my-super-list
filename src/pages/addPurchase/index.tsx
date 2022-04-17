@@ -9,10 +9,26 @@ export function AddPurchase() {
     const [ item, setItem ] = useState<string>('')
     const [ listItems, setListItems ] = useState<string[]>([])
 
-    const isEmpty = listItems.length === 0
+    const isListEmpty = listItems.length === 0
+
+    const transformCapitalLetter = (content: string) => {
+        let arrContent = [...content]
+        const firstLetter = arrContent[0].toUpperCase()
+        arrContent.shift()
+
+        return firstLetter + arrContent.join('')
+
+    }
 
     const insertItems = (item: string) => {
-        setListItems([...listItems, item])
+        const isEmpty = item == ''
+        const hasOnlyWhiteSpace = item.trim() == ''
+
+        if(!isEmpty && !hasOnlyWhiteSpace) {
+            const itemTransform = transformCapitalLetter(item.trim())
+
+            setListItems([...listItems, itemTransform])
+        }
     }
 
     const removeItem = (itemToRemove: string) => {
@@ -30,7 +46,6 @@ export function AddPurchase() {
         setItem('')
     }
 
-
     return (
         <Container>
             <ContainerHeader>
@@ -46,7 +61,7 @@ export function AddPurchase() {
             <ContainerList>
                 <div>
                     { listItems.map((item, index) => <List key={`${item}-${index}`} funcDelete={removeItem} content={item} />) }
-                   { !isEmpty && <footer>
+                   { !isListEmpty && <footer>
                         <button onClick={() => console.log} >Salvar compra</button>
                     </footer>}
                 </div>
